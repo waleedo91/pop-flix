@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pop Flix</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -19,6 +16,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./movies.css" />
   </head>
 
   <body>
@@ -30,7 +30,7 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Pop Flix!</a>
+          <a class="navbar-brand" href="#">Pop Flix!</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,7 +48,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./index.html"
+                  href="../index.html"
                   >Home</a
                 >
               </li>
@@ -63,11 +63,7 @@
                   Flix!
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/movies/movies.html"
-                      >Movies</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="#">Movies</a></li>
                   <li><a class="dropdown-item" href="#">Shows</a></li>
                   <li>
                     <a class="dropdown-item" href="#">Anime</a>
@@ -92,62 +88,68 @@
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleFade"
-        class="carousel slide carousel-fade carousel-container"
-      >
-        <h1 id="carousel-header">What's Next?</h1>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./images/images (2).jpg"
-              class="d-block carousel-pic"
-              alt="fast x cover"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/1_222YwX5Uw2xMHrpHGHliLQ.jpg"
-              class="d-block carousel-pic"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/p15674164_v_v13_as.jpg"
-              class="d-block carousel-pic"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <i class="fa-solid fa-angle-left slide-arrow fa-2xl"></i>
-
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <i class="fa-solid fa-angle-right slide-arrow fa-2xl"></i>
-        </button>
+      <div>
+        <ul id="movie-container">
+          <li class="list-card">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">The Beekeeper</h5>
+              </div>
+              <img
+                src="../images/images (1).jpg"
+                class="card-img-top movie-image"
+                alt="the beekeeper"
+              />
+            </div>
+          </li>
+          <li class="list-card">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool & Wolverine</h5>
+              </div>
+              <img
+                src="../images/images.jpg"
+                class="card-img-top movie-image"
+                alt="the beekeeper"
+              />
+            </div>
+          </li>
+          <li class="list-card">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">The Joker: Folie a Deux</h5>
+              </div>
+              <img
+                src="../images/download.jpg"
+                class="card-img-top movie-image"
+                alt="the beekeeper"
+              />
+            </div>
+          </li>
+          <li class="list-card">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Green Book</h5>
+              </div>
+              <img
+                src="../images/p15674164_v_v13_as.jpg"
+                class="card-img-top movie-image"
+                alt="the beekeeper"
+              />
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
+      <!-- place footer here -->
       <nav
         class="navbar bg-body-tertiary"
         id="footer-container"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
+          <a class="navbar-brand" href="#"
             >Pop-Flix! <span id="copyright">&copy</span></a
           >
           <p id="address">
@@ -158,7 +160,6 @@
         </div>
       </nav>
     </footer>
-
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -171,14 +172,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/60a22b79b0.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Javascript -->
-    <script src="/movies/movies.js"></script>
+    <script src="./movies.js"></script>
   </body>
 </html>
